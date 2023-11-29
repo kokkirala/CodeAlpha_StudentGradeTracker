@@ -8,16 +8,16 @@ public class GradeAnalyzer {
         System.out.print("Enter the number of students: ");
         int numStudents = scanner.nextInt();
 
-        // Declare an array to store students' grades
+        
         int[] grades = new int[numStudents];
 
-        // Input loop to get grades from the teacher
+       
         for (int i = 0; i < numStudents; i++) {
             System.out.print("Enter the grade for student " + (i + 1) + ": ");
             grades[i] = scanner.nextInt();
         }
 
-        // Calculate average, highest, and lowest grades
+    
         int sum = 0;
         int highest = Integer.MIN_VALUE;
         int lowest = Integer.MAX_VALUE;
@@ -32,10 +32,10 @@ public class GradeAnalyzer {
             }
         }
 
-        // Calculate average
+
         double average = (double) sum / numStudents;
 
-        // Display results
+       
         System.out.println("\nResults:");
         System.out.println("Average Grade: " + average);
         System.out.println("Highest Grade: " + highest);
